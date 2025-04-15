@@ -1,0 +1,39 @@
+{
+	"info": {
+		"_postman_id": "d0db9d60-eb55-4418-9a24-62af1bf27469",
+		"name": "SendGrid",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "16194081"
+	},
+	"item": [
+		{
+			"name": "New Request",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"toEmail\": \"zeeshanilyas002@gmail.com\",\r\n    \"subject\": \"Test Email\",\r\n    \"body\": \"This is test email\"\r\n  }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:7203/api/EmailTest/sendemail",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7203",
+					"path": [
+						"api",
+						"sendemail"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
